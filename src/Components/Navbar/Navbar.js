@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
+import { MdTravelExplore } from "react-icons/md";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBar");
@@ -19,7 +20,10 @@ const Navbar = () => {
       <header className="header flex">
         <div className="logoDiv">
           <a href="#" className="logo flex">
-            <h1>Travel.</h1>
+            <h1>
+              {" "}
+              <MdTravelExplore className="navbarIcon" /> Travel.
+            </h1>
           </a>
         </div>
 
@@ -73,12 +77,12 @@ const Navbar = () => {
           </ul>
 
           <div onClick={removeNavbar} className="closeNavbar">
-            <AiFillCloseCircle className="icon" />
+            <AiFillCloseCircle className="navbarIcon" />
           </div>
         </div>
 
         <div onClick={showNavbar} className="toggleNavbar">
-          <PiDotsNineBold className="icon" />
+          <PiDotsNineBold className="navbarIcon" />
         </div>
       </header>
     </section>
