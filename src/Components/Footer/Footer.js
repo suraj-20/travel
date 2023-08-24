@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Footer.css";
 import { FiChevronRight, FiSend } from "react-icons/fi";
 import { MdOutlineTravelExplore } from "react-icons/md";
-// import video2 from "../../Assets/video2.mp4";
+import video2 from "../../Assets/video2.mp4";
 import {
   AiFillInstagram,
   AiFillYoutube,
